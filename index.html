@@ -2,19 +2,109 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <title>Title</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="static/css/main.css">
-  <script>
-    function clickme() {
-      document.getElementById("demo").innerHTML = "Hello World!";
-    }
-  </script>
+  
   <script src="static/js/main.js"></script>
 </head>
 
 <body>
-  <p id="demo">This is a paragraph.</p>
-  <button type="button" onclick="clickme()">Click me!</button>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Overview</h1>
+      <p id="my-par" class="subtitle">My first website with <strong>Bulma</strong>!</p>
+      <button id="my-btn" class="button is-primary" onclick="clickme()">Click me!</button>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Responsiveness</h1>
+      <p style="margin-bottom: 2em;">Responsiveness</p>
+      <p class="is-size-4-mobile">Responsiveness</p>
+      <p class="is-size-4-touch">Responsiveness</p>
+      <p class="is-size-4-tablet">Responsiveness</p>
+      <p class="is-size-4-desktop">Responsiveness</p>
+      <p class="is-size-4-widescreen">Responsiveness</p>
+      <p class="is-size-4-fullhd">Responsiveness</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="section">
+    <h1 class="title">Layout</h1>
+    <h2 class="subtitle">Section</h2>
+
+    <div class="container">
+      <h2 class="subtitle">By default, the $fullhd breakpoint value is used to calculate the absolute maximum width of the container. Simply change it to a smaller value like $widescreen, $desktop, or any value in pixels.</h2>
+    </div>
+
+    <div class="container is-max-desktop">
+      <h2 class="subtitle has-text-centered">By default, the $fullhd breakpoint value is used to calculate the absolute maximum width of the container. Simply change it to a smaller value like $widescreen, $desktop, or any value in pixels.</h2>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="section">
+    <h1 class="title">Columns</h1>
+    <div class="columns">
+      <div
+        class="
+          column
+          is-three-quarters-mobile
+          is-two-thirds-tablet
+          is-half-desktop
+          is-one-third-widescreen
+          is-one-quarter-fullhd
+        "
+      >
+        <p class="bg-notification"><code>is-three-quarters-mobile</code><br/>
+        <code>is-two-thirds-tablet</code><br/>
+        <code>is-half-desktop</code><br/>
+        <code>is-one-third-widescreen</code><br/>
+        <code>is-one-quarter-fullhd</code></p>
+      </div>
+      <div class="column"><p class="bg-notification">2</p></div>
+      <div class="column"><p class="bg-notification">3</p></div>
+      <div class="column"><p class="bg-notification">4</p></div>
+      <div class="column"><p class="bg-notification">5</p></div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="section">
+    <h1 class="title">Components</h1>
+    <nav class="breadcrumb" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="#">Bulma</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Components</a></li>
+        <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <hr>
+
+  <section class="section">
+    <h1 class="title">Elements</h1>
+    <div class="box">I'm in a box.</div>
+
+    <button class="button is-link is-outlined">Outlined</button>
+    <button class="button is-link is-rounded">Rounded</button>
+    <button class="button is-link is-inverted">Inverted</button>
+    <button class="button is-link is-light">Primary</button>
+  </section>
+
 </body>
 
 </html>

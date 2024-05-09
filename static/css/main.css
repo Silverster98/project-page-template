@@ -1,3 +1,7 @@
 h1 {
   color: red;
 }
+
+.bg-notification {
+  background-color: aquamarine;
+}
