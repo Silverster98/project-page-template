@@ -4,15 +4,17 @@
 <head>
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="static/css/main.css">
-  <style>
-    h1 {
-      color: red;
+  <script>
+    function clickme() {
+      document.getElementById("demo").innerHTML = "Hello World!";
     }
-  </style>
+  </script>
+  <script src="static/js/main.js"></script>
 </head>
 
 <body>
-  <h1 style="color: red;">Hello World!</h1>
+  <p id="demo">This is a paragraph.</p>
+  <button type="button" onclick="clickme()">Click me!</button>
 </body>
 
 </html>
