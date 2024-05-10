@@ -7,23 +7,32 @@
   
   <title>Title</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
   <link rel="stylesheet" type="text/css" href="/static/css/main.css">
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
   <script src="/static/js/main.js"></script>
-  <script src="/static/js/static.js" type="module"></script>
-  <script src="/static/js/animate.js" type="module"></script>
 </head>
 
 <body>
   <section class="section">
-    <div id="canvas-pose-container" class="container">
-      <canvas id="canvas-pose" class="webgl" style="height: 100%; width: 100%;"></canvas>
-    </div>
-  </section>
+    <div class="container is-max-desktop">
+      
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video muted autoplay="autoplay" loop="loop" height="100%">
+            <source src="static/videos/m1-mesh.mp4" type="video/mp4">
+          </video>
+        </div>
 
-  <section class="section">
-    <div id="canvas-motion-container" class="container">
-      <canvas id="canvas-motion" class="webgl" style="height: 100%; width: 100%;"></canvas>
+        <div class="item">
+          <video muted autoplay="autoplay" loop="loop" height="100%">
+            <source src="static/videos/m2-mesh.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+        
     </div>
   </section>
 </body>

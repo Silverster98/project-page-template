@@ -1,7 +1,17 @@
-h1 {
-  color: red;
+html {
+  background-color: #fafafa;
 }
 
-.bg-notification {
-  background-color: aquamarine;
+body {
+  background-color: #fafafa;
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  overflow: hidden;
+  margin: 0 2em;
+  padding-bottom: 2em;
 }
