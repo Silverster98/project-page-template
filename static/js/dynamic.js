@@ -5,7 +5,7 @@ import { DRACOLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loader
 
 const W_H = 16 / 9;
 const canvas = document.querySelector('#canvas-dynamic');
-const modelUrl = new URL('/static/glbs/motion.glb', import.meta.url);
+const modelUrl = new URL('../glbs/motion.glb', import.meta.url);
 
 const scene = new THREE.Scene();
 // load glb model and add to scene
