@@ -9,6 +9,5 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplaySpeed: 100000,
   }
   // Initialize all div with carousel class
-  console.log('tag')
   var carousels = bulmaCarousel.attach('.carousel', options);
 });
