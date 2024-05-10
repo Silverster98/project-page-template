@@ -1,0 +1,7 @@
+.carousel-items {
+  overflow: hidden;
+}
+
+.carousel-items .item {
+  margin: 0 2em;
+}

@@ -4,7 +4,7 @@ import {GLTFLoader} from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/G
 import { DRACOLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/DRACOLoader';
 
 const W_H = 16 / 9;
-const canvas = document.querySelector('#canvas-motion');
+const canvas = document.querySelector('#canvas-dynamic');
 const modelUrl = new URL('/static/glbs/motion.glb', import.meta.url);
 
 const scene = new THREE.Scene();
@@ -68,7 +68,7 @@ renderer.setAnimationLoop(() => {
 
 // resize renderers
 function resizeRenderers() {
-  let content_width = document.querySelector('#canvas-motion-container').offsetWidth;
+  let content_width = document.querySelector('#canvas-dynamic-container').offsetWidth;
     renderer.setSize(content_width, content_width / W_H);
 }
 window.addEventListener('resize', () => {

@@ -3,7 +3,7 @@ import {OrbitControls} from 'https://unpkg.com/three@0.127.0/examples/jsm/contro
 import {GLTFLoader} from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader.js';
 
 const W_H = 16 / 9;
-const canvas = document.querySelector('#canvas-pose');
+const canvas = document.querySelector('#canvas-static');
 const modelUrl = new URL('/static/glbs/pose.glb', import.meta.url);
 
 const scene = new THREE.Scene();
@@ -57,7 +57,7 @@ renderer.setAnimationLoop(() => {
 
 // resize renderers
 function resizeRenderers() {
-  let content_width = document.querySelector('#canvas-pose-container').offsetWidth;
+  let content_width = document.querySelector('#canvas-static-container').offsetWidth;
     renderer.setSize(content_width, content_width / W_H);
 }
 window.addEventListener('resize', () => {

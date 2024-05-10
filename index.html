@@ -6,28 +6,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <title>Title</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+  <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> <!-- arXiv and google icon -->
   <link rel="stylesheet" type="text/css" href="/static/css/main.css">
-  
+
+  <script src="https://kit.fontawesome.com/edbfd41333.js" crossorigin="anonymous"></script> <!-- fontawesome icons -->
   <script src="/static/js/main.js"></script>
+
+  <!-- Optional for different requirements; if you don't need them, just remove -->
+  <!-- 1. before-after-comparison-slider: https://github.com/amirhosseinrahmati/before-after-comparison-slider/tree/master -->
+  <link rel="stylesheet" type="text/css" href="/static/css/before_after.css">
+  <script src="/static/js/before_after.js" type="text/javascript" ></script>
+
+  <!-- 2. three.js for loading mesh: https://threejs.org/ -->
+  <script src="/static/js/static.js" type="module"></script> <!-- static scene -->
+  <script src="/static/js/dynamic.js" type="module"></script> <!-- dynamic scene -->
+
+  <!-- 3. Carousel for visualizing a list of results: https://github.com/Wikiki/bulma-carousel -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/carousel.css">
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js" type="module"></script>
+  <script src="/static/js/carousel.js" type="module"></script>
 </head>
 
 <body>
   <section class="section">
-    <div class="container is-max-desktop">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-2">Deep Residual Learning for Image Recognition</h2>
+      <p class="has-text-danger publisher">CVPR 2015</p>
+
+      <div class="is-size-5">
+        <span class="authors">
+          <a href="/" target="_blank">Kaiming He</a><sup>1</sup>,</span>
+        <span class="authors">
+          <a href="/" target="_blank">Xiangyu Zhang</a><sup>1</sup>,</span>
+        <span class="authors">
+          <a href="/" target="_blank">Shaoqing Ren</a><sup>1</sup>,</span>
+        <span class="authors">
+          <a href="/" target="_blank">Jian Sun</a><sup>1</sup></span>
+      </div>
+
+      <div class="is-size-6">
+        <span class="authors">
+          <sup>1</sup>Microsoft Research
+        </span>
+      </div>
+
+      <div class="links">
+        <span class="link">
+          <a href="/" target="_blank" class="external-link button is-normal is-rounded is-outlined is-primary">
+            <span class="icon">
+              <i class="ai ai-arxiv"></i>
+            </span>
+            <span>arXiv</span>
+          </a>
+        </span>
+
+        <span class="link">
+          <a href="/" target="_blank" class="external-link button is-normal is-rounded is-outlined is-danger">
+            <span class="icon">
+              <i class="fas fa-file-pdf"></i>
+            </span>
+            <span>Paper</span>
+          </a>
+        </span>
+
+        <span class="link">
+          <a href="/" target="_blank" class="external-link button is-normal is-rounded is-outlined is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </span>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <video autoplay controls muted loop height="100%">
+            <source src="/static/videos/m1-mesh.mp4" type="video/mp4">
+          </video>
+          <h6 class="subtitle is-6">
+            <strong>TL;DR</strong> Lorem ipsum dolor sit amet. Vel molestiae deleniti qui cumque nisi ex libero perspiciatis est perspiciatis enim aut nemo placeat qui reprehenderit vitae cum blanditiis fuga.
+          </h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Abstract</h3>
+
+      <div class="has-text-justified">
+        <p>
+          Lorem ipsum dolor sit amet. Vel molestiae deleniti qui cumque nisi ex libero perspiciatis est perspiciatis enim aut nemo placeat qui reprehenderit vitae cum blanditiis fuga. Sed consequuntur numquam sed doloribus debitis quo omnis fugit qui dolor sunt sed nihil rerum. Et fugiat dolor ab nemo accusamus et quos aliquam cum officiis officiis rem assumenda internos quo iure inventore sit delectus internos! Non odit delectus ut amet omnis et sequi perferendis? Ea natus laudantium quo explicabo repellendus sed culpa sapiente et atque obcaecati aut tenetur dicta. Et ipsum voluptatem est velit expedita eum rerum magni 33 reiciendis laudantium et libero voluptatibus aut quis recusandae ea quibusdam facilis. Ut laudantium debitis ex ipsum officia et nobis aliquam sed omnis maxime rem distinctio vero aut deserunt quaerat. Nam sunt libero est fuga sunt non inventore dolorem sit sapiente repudiandae in commodi minus ad galisum pariatur. Eum quis error qui blanditiis culpa a exercitationem itaque qui officiis soluta est praesentium minima quo sint aspernatur. Aut earum rerum ut similique aspernatur aut corrupti autem quo odio eaque ut reiciendis voluptas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">3D Mesh Visualization with Three.js</h3>
+
+      <div id="canvas-static-container" class="block">
+        <canvas id="canvas-static" class="webgl" style="height: 100%; width: 100%;"></canvas>
+      </div>
+      
+      <div id="canvas-dynamic-container" class="block">
+        <canvas id="canvas-dynamic" class="webgl" style="height: 100%; width: 100%;"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Before-After-Comparison-Slider</h3>
       
       <div class="bal-block">
-        <div id="meshes" class="bal-container">
+        <div id="before-after-container" class="bal-container">
           <div class="bal-after">
             <video muted autoplay="autoplay" loop="loop" height="100%">
-              <source src="static/videos/m1-mesh.mp4" type="video/mp4">
+              <source src="/static/videos/m1-mesh.mp4" type="video/mp4">
             </video>
           </div>
 
           <div class="bal-before">
             <div class="bal-before-inset">
               <video muted autoplay="autoplay" loop="loop" height="100%">
-                <source src="static/videos/m2-mesh.mp4" type="video/mp4">
+                <source src="/static/videos/m2-mesh.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -38,13 +148,52 @@
           </div>
         </div>
       </div>
-        
     </div>
   </section>
-</body>
 
-<script>
-  new BeforeAfter({id: '#meshes'});
-</script>
+  <section class="section custom-section">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-3">Carousel for visualizing a set of results</h3>
+
+      <div class="carousel carousel-items">
+        <div class="item">
+          <video muted autoplay="autoplay" loop="loop" height="100%">
+            <source src="static/videos/m1-mesh.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item">
+          <video muted autoplay="autoplay" loop="loop" height="100%">
+            <source src="static/videos/m2-mesh.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+  </section>
+
+  <section class="section custom-section">
+    <div class="container is-max-desktop">
+      <h3 class="title is-3 has-text-centered">Citation</h3>
+
+      <div class="bibtex">
+        <pre><code>@inproceedings{he2016deep,
+  title={Deep residual learning for image recognition},
+  author={He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle=CVPR,
+  year={2016}
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container is-max-desktop has-text-centered">
+      <span>
+      This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      <br>
+      The open-source code is available at <a href="https://github.com/silverster98/page-template">github</a>.
+      </span>
+    </div>
+  </footer>
+</body>
 
 </html>
